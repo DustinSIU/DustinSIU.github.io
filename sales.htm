@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Basic Web page
+Use: web page template
+Author: Dustin Myers
+School/Term: Southern Illinois University, Fall 2022
+Developed: August 30, 2022
+Tested: Sept 25, 2022; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+		<meta name="description" content="Bicycle Sales">
+        <meta name="keywords" content="bicycle, Sales">
+	    <link href="BicycleCSS.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="slicknav.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    	<script src="jquery.slicknav.min.js"></script>
+   		 <script>
+			 $(document).ready(function(){
+				 $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			 });
+		</script>
+        <title>Myers's Bicycle Sales</title>
+
+</head>
+<body>
+		<header>
+			<div >
+				<h1>Bicycle Sales</h1>
+			</div>	
+		</header>
+	<!--Top navigation Bar-->
+	 <div class ="Slick Nav Menu">
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+			<ul>
+				<li><a  href="index.htm">Home</a></li>
+				<li><a href="rentals.htm">Rentals</a></li>
+				<li><a href="sales.htm">Sales</a></li>
+				<li><a href="services.htm">Contact</a></li>
+				<li><a href="contact.htm">About Us</a></li>
+		   </ul>
+		</nav>
+      </div>
+	<main>
+	<!--split column for street bikes and mountain bikes -->
+		<div>
+			<video controls>
+			 <source src="AeroVideo.mp4" type="video/webm" class="video"> </video>
+			<p><strong>Now in stock the new Cannondale Systemsix</strong></p>	
+		<div>
+		  <h2>Street Bikes</h2>
+				<div>
+					<h3> Cannondale SystemSix $6500</h3>
+				  <div class="BikeImages">
+					<img src="aero.jpg" alt="Cannondale SystemSix" class="BikeImages" >
+			    	<img src="addtocart.jpg" alt"new bicycle" class="rollimg2">
+	  					</div>	
+							<br><br><p class="sales">This Cannondale SystemSix is an incredibly fast bike that left us feeling that other brands are still playing catch-up with Cannondale when it comes to creating aero bikes. The Hi-Mod frameset is Cannondale’s stiffest carbon fibre, and despite the stiffness and aero tubing, we found this to be a remarkably comfortable bike to ride. This bike has a halo-spec with a SRAM eTap AXS groupset, 64mm-deep carbon wheels and Cannondale’s two-piece aero KNOT handlebar, which still allows for plenty of adjustment.</p>
+		</div>
+				<div>
+	  				<h3> Specialized Allez $3000</h3>
+	  					<div class="BikeImages">	
+							<img src="Allez.jpg" alt="Specialized Allez" class="BikeImages" >
+							<img src="addtocart.jpg" alt"new bicycle" class="rollimg2">
+	  					</div>	
+	  						<br><br><p class="sales">Specialized's stalwart entry level alloy road bike comes with a pedigree that stretches back for years and it gets some trickle-down tech from the brand's high end road bikes like an all-carbon fork and a frame with butted tubing to save weight, smooth welds, dropped seat stays and internal cable routing. There's lots of versatility built into the Allez, with rack and mudguard mounts, so you can use it for the commute as well as faster recreational rides. </p>
+				</div>
+		</div>
+	<div>
+    	<h2>Mountain Bikes</h2>
+    		<div>
+	  			<h3>Ibis Ripmo V2 XT $5800</h3>
+					<div class="BikeImages">
+						<img src="ripmo2.jpg" alt="Ibis Ripmo V2" class="BikeImages" >
+						<img src="addtocart.jpg" alt"new bicycle" class="rollimg2">
+	  				</div>	
+						<br><br><p class="sales">The Ripmo V2 is an excellent aggressive trail bike with an amazing combination of uphill and downhill performance. This bike makes a lot of sense for the rider who wants a bike that climbs well without sacrificing performance on the way back down. This bike is supremely versatile, and we'd recommend it to just about anyone.</p>
+			</div>
+	   		<div>
+	  			<h3>Giant Stance 29 2  $1800</h3>
+					<div class="BikeImages">
+	  					<img src="Stance.jpg" alt="Giant Stance 29 2" class="BikeImages" >
+						<img src="addtocart.jpg" alt"new bicycle" class="rollimg2">
+	  				</div>	
+	  					<br><br><p class="sales">Giant is known for making excellent bikes at very competitive prices, and the Stance 29 2 is an excellent example. This complete bike costs roughly half the price of many carbon frames on its own, yet it performs impressively well out on the trail. This affordable trail bike rolls on 29-inch wheels with 120mm rear-wheel suspension and a 130mm travel fork.</p>
+			</div>
+		  </div>
+	  </div>
+</main>
+	<!--Page Navigation-->
+	<footer>
+			<p><a href="index.htm">Home</a>
+				<a href="rentals.htm">Rentals</a>
+				<a href="sales.htm">Sales</a>
+				<a href="services.htm">Services</a>
+				<a href="contact.htm">Contact Us</a>
+			 </p>
+			<p>Myers's Bicycles <br>1234 W Main Street Carbondale, IL 62902 <br>618-555-5555<br></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: response
+Use: web page template
+Author: Dustin Myers
+School/Term: Southern Illinois University, Fall 2022
+Developed: October 25, 2022
+Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+		<meta name="description" content="Bicycle shop offering sales and rentals">
+        <meta name="keywords" content="bicycle, sales, rentals, service">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="slicknav.css">
+		<link href="BicycleCSS.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/png" href="favicon.png">
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    	<script src="jquery.slicknav.min.js"></script>
+   		 <script>
+			 $(document).ready(function(){
+				 $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			 });
+		</script>
+        <title>Contact Us</title>
+<link href="BicycleCSS.css" rel="stylesheet" type="text/css">
+<link href="ContactCSS.css" rel="stylesheet" type="text/css">
+</head>
+<body class="Aboutus">
+		<header>
+			<div >
+				<h1>Response resceived</h1>
+			</div>	
+		</header>
+	<!--Top navigation Bar-->
+	<div class ="Slick Nav Menu">
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+			<ul>
+				<li><a  href="index.htm">Home</a></li>
+				<li><a href="rentals.htm">Rentals</a></li>
+				<li><a href="sales.htm">Sales</a></li>
+				<li><a href="services.htm">Service</a></li>
+				<li><a href="contact.htm">About Us</a></li>
+		   </ul>
+		</nav>
+      </div>
+	<main>
+	
+		<h2>Thank you for contacting us. We will respond to you inquiry as soon as we can. While you wait on our timely response please checkout our <a href="sales.htm">latest inventory</a></h2>
+		
+	</main>
+	<!--Page Navigation-->
+	<footer class="response_footer">
+			<p style="color:white"><a href="index.htm">Home</a>
+				<a href="rentals.htm">Rentals</a>
+				<a href="sales.htm">Sales</a>
+				<a href="services.htm">Services</a>
+				<a href="contact.htm">Contact Us</a>
+			 </p>
+			<p style="color:white">Myers's Bicycles 1234 W Main Street Carbondale, IL 62902 618-555-5555</p>
+	</footer>
+</body>
+</html>
