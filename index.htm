@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <!--
 *****************************************************************************
-Title: Myers's Bicycles
-Use: Bicycle shop website
+Title: Contact Us
+Use: web page template
 Author: Dustin Myers
 School/Term: Southern Illinois University, Fall 2022
-Developed: August 30, 2022
-Tested: Sept 25, 2022; Passed on Firefox, Edge and Chrome browsers.
+Developed: October 25, 2022
+Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
 ******************************************************************************
 -->
 <html lang="en-US">
 <head>
         <meta charset="utf-8">
-        <meta name="description" content="Bicycle shop offering sales and rentals">
-        <meta name="keywords" content="bicycle, sales, rentals, service">
+		<meta name="description" content="Theatre production Company">
+        <meta name="keywords" content="Theatre, musicals, director, stage manager, lighting design, set design">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS Files-->
 		<link rel="stylesheet" href="slicknav.css">
-		<link href="BicycleCSS.css" rel="stylesheet" type="text/css">
+		<link href="FinalCSS.css" rel="stylesheet" type="text/css">
+		<link href="ContactCSS.css" rel="stylesheet" type="text/css">
+	<!--Favicon-->
 		<link rel="icon" type="image/png" href="favicon.png">
+	<!--jquery to check screen size for mobile layout-->
     	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     	<script src="jquery.slicknav.min.js"></script>
    		 <script>
@@ -25,61 +29,65 @@ Tested: Sept 25, 2022; Passed on Firefox, Edge and Chrome browsers.
 				 $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
 			 });
 		</script>
-        <title>Myers's Bicyles</title>
-       
+	
+        <title>Skyline Creek Productions</title>
+
 </head>
 <body>
-    <!--Shop name and adress with discription-->
-    <header>
-		 <h1>Myers's Bicycles</h1>	
-	</header>
-	
-    <!--Top navigation Bar-->
+		<header>
+			<div >
+			  <img src="images/logo2.png" alt="Skyline Creek Logo"  class="logo"> <h1 style="font-size: 8em">Skyline Creek Produtions</h1>
+			</div>	
+		</header>
+	<!--Top navigation Bar-->
 	<div class ="Slick Nav Menu">
         <nav id="mobile_menu"></nav>
         <nav id="nav_menu">
 			<ul>
 				<li><a  href="index.htm">Home</a></li>
-				<li><a href="rentals.htm">Rentals</a></li>
-				<li><a href="sales.htm">Sales</a></li>
-				<li><a href="services.htm">Service</a></li>
-				<li><a href="contact.htm">About Us</a></li>
+				<li><a href="services.htm">Services Offered</a></li>
+				<li><a href="pastproductions.htm">Past Productions</a></li>
+				<li><a href="aboutus.htm">About Us</a></li>
+				<li><a href="contact.htm">Contact Us</a></li>
 		   </ul>
 		</nav>
       </div>
-	<main>
-   		<p>We are a full service bicycle shop offering sales, service, and repairs.<br> We also have a full assortment of all your racing needs.<br> <b>Visit us at our new location on campus.</b> <a href="https://www.siu.edu/">Visit SIU</a></p>
-    <!--list of models we offer-->
-      <ul>
-        <li><a href="#" class="model">Triban RC 520 </a></li>
-        <li><a href="#" class="model">Specialized Allez</a></li>
-        <li><a href="#" class="model">Giant Contend SL</a></li>
-        <li><a href="#" class="model">Canyon Ultimate CF SL8 </a></li>
-        <li><a href="#" class="model">Colnago</a></li>
-      </ul>  
-    <!--bicycle image for main page-->
-    		<div class="picture"></div>
-    			<br><br><br><figcaption><strong>We won’t stop creating beautiful memories while we ride together.</strong> </figcaption>
-			
-    	<h5>Join our mailing list to stay upto date on all your bicycle needs</h5>
-    	<form id="form" >
-     		 <input id="email" type="email" name="email" placeholder="Please enter your email" required>
-      		<input type="submit" id="submit" value="Submit" class="btn" onclick="alert('Thank you for joining our mailing list')">
-   		 </form>
+	<main>		<p class="center" style="width:65%">We are proud to be your local theatre production company that brings to life the best productions in the area. Since the first production in 2012 we have gone on to present over 30 productions. We offer services in all aspects of theatre. From stage management to full-scale production services. We provide the services to fit your needs and vision. Please visit our past production page to experience what we offer</p><br>
+		<div class="center">
+		<div class="responsive">
+ 		  <div class="gallery">
+      		  <img src="images/director.PNG" alt="Director Experience" width="600" height="400">
+    		<div class="desc">Director and Stage Management</div>
+  		  </div>
+		</div>
+		
+		<div class="responsive">
+ 		  <div class="gallery">
+    		<img src="images/setdesign.PNG" alt="Set Design Experience" width="600" height="400">
+    		<div class="desc">Set Design and Construction</div>
+  		  </div>
+		</div>
+		
+		<div class="responsive">
+ 		  <div class="gallery">
+    		<img src="images/Lightandsound.PNG" alt="Light and Sound Experience" width="600" height="400">
+    		<div class="desc">Lighting and Sound Design</div>
+  		  </div>
+		</div>
+	</div>
+		
 	</main>
 	<!--Page Navigation-->
-		<footer>
-			<p><a href="index.htm">Home</a>
-				<a href="rentals.htm">Rentals</a>
-				<a href="sales.htm">Sales</a>
-				<a href="services.htm">Services</a>
+	<footer class="footer">
+			<p>
+				<a  href="index.htm">Home</a>
+				<a href="services.htm">Services Offered</a>
+				<a href="pastproductions.htm">Past Productions</a>
+				<a href="aboutus.htm">About Us</a>
 				<a href="contact.htm">Contact Us</a>
 			 </p>
-			<p>Myers's Bicycles 1234 W Main Street Carbondale, IL 62902 618-555-5555</p>
-		</footer>
-	<audio controls loop autoplay >
-	<source src="website.mp3" type="audio/mp3">
-	</audio>
-	
-	</body>
+			<p>Skyline Creek Productions | 211 N. Market St. Suite B Marion, IL 62959 | 618-993-5480 </p>
+			<p>&copy 2022  Skyline Creek Productions</p>
+	</footer>
+</body>
 </html>

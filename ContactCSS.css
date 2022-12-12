@@ -4,7 +4,7 @@ form{
 	padding: 20px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	color: black;
-	width: 450px;
+	width: 50%;
 	text-align:center;
 	margin-left: auto;
 	margin-right: auto;
@@ -53,6 +53,7 @@ legend {
 
 fieldset{
     background-color: black;
+	float:left;
     
 }
 label{

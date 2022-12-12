@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Contact Us
+Use: web page template
+Author: Dustin Myers
+School/Term: Southern Illinois University, Fall 2022
+Developed: October 25, 2022
+Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+		<meta name="description" content="Theatre production Company">
+        <meta name="keywords" content="Theatre, musicals, director, stage manager, lighting design, set design">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS Files-->
+		<link rel="stylesheet" href="slicknav.css">
+		<link href="FinalCSS.css" rel="stylesheet" type="text/css">
+		<link href="ContactCSS.css" rel="stylesheet" type="text/css">
+	<!--Favicon-->
+		<link rel="icon" type="image/png" href="favicon.png">
+	<!--jquery to check screen size for mobile layout-->
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    	<script src="jquery.slicknav.min.js"></script>
+   		 <script>
+			 $(document).ready(function(){
+				 $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			 });
+		</script>
+	
+        <title>Skyline Creek Productions</title>
+
+</head>
+<body>
+		<header>
+			<div >
+			  <img src="images/logo2.png" alt="Skyline Creek Logo"  class="logo"> <h1 style="font-size: 8em">Skyline Creek Produtions</h1>
+			</div>	
+		</header>
+	<!--Top navigation Bar-->
+	<div class ="Slick Nav Menu">
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+			<ul>
+				<li><a  href="index.htm">Home</a></li>
+				<li><a href="services.htm">Services Offered</a></li>
+				<li><a href="pastproductions.htm">Past Productions</a></li>
+				<li><a href="aboutus.htm">About Us</a></li>
+				<li><a href="contact.htm">Contact Us</a></li>
+		   </ul>
+		</nav>
+      </div>
+	<main>		<p class="center" style="width:65%">We are proud to be your local theatre production company that brings to life the best productions in the area. Since the first production in 2012 we have gone on to present over 30 productions. We offer services in all aspects of theatre. From stage management to full-scale production services. We provide the services to fit your needs and vision. Please visit our past production page to experience what we offer</p><br>
+		<div class="center">
+		<div class="responsive">
+ 		  <div class="gallery">
+      		  <img src="images/director.PNG" alt="Director Experience" width="600" height="400">
+    		<div class="desc">Director and Stage Management</div>
+  		  </div>
+		</div>
+		
+		<div class="responsive">
+ 		  <div class="gallery">
+    		<img src="images/setdesign.PNG" alt="Set Design Experience" width="600" height="400">
+    		<div class="desc">Set Design and Construction</div>
+  		  </div>
+		</div>
+		
+		<div class="responsive">
+ 		  <div class="gallery">
+    		<img src="images/Lightandsound.PNG" alt="Light and Sound Experience" width="600" height="400">
+    		<div class="desc">Lighting and Sound Design</div>
+  		  </div>
+		</div>
+	</div>
+		
+	</main>
+	<!--Page Navigation-->
+	<footer class="footer">
+			<p>
+				<a  href="index.htm">Home</a>
+				<a href="services.htm">Services Offered</a>
+				<a href="pastproductions.htm">Past Productions</a>
+				<a href="aboutus.htm">About Us</a>
+				<a href="contact.htm">Contact Us</a>
+			 </p>
+			<p>Skyline Creek Productions | 211 N. Market St. Suite B Marion, IL 62959 | 618-993-5480 </p>
+			<p>&copy 2022  Skyline Creek Productions</p>
+	</footer>
+</body>
+</html>

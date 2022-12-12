@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Contact Us
+Use: web page template
+Author: Dustin Myers
+School/Term: Southern Illinois University, Fall 2022
+Developed: October 25, 2022
+Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+		<meta name="description" content="Theatre production Company">
+        <meta name="keywords" content="Theatre, musicals, director, stage manager, lighting design, set design">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS Files-->
+		<link rel="stylesheet" href="slicknav.css">
+		<link href="FinalCSS.css" rel="stylesheet" type="text/css">
+		<link href="ContactCSS.css" rel="stylesheet" type="text/css">
+	<!--Favicon-->
+		<link rel="icon" type="image/png" href="favicon.png">
+	<!--jquery to check screen size for mobile layout-->
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    	<script src="jquery.slicknav.min.js"></script>
+   		 <script>
+			 $(document).ready(function(){
+				 $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			 });
+		</script>
+	
+        <title>Contact Us</title>
+
+</head>
+<body>
+		<header>
+			<div >
+				
+				<img src="images/logo.png" alt="Skyline Creek Logo" style="float:left"> <h1 style="font-size: 8em">Skyline Creek Produtions</h1>
+			</div>	
+		</header>
+	<!--Top navigation Bar-->
+	<div class ="Slick Nav Menu">
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+			<ul>
+				<li><a  href="index.htm">Home</a></li>
+				<li><a href="services.htm">Services Offered</a></li>
+				<li><a href="pastproductions.htm">Past Productions</a></li>
+				<li><a href="aboutus.htm">About Us</a></li>
+				<li><a href="contact.htm">Contact Us</a></li>
+		   </ul>
+		</nav>
+      </div>
+	<main>
+		<h2 class="center">About US</h2>
+		<div class="center">
+			<p>Skyline Creek Productions launched to a sold-out production of Les Misérables at The Marion Cultural and Civic Center in 2012. Since that first production, we have gone on to present a number of elaborate and well-attended productions in Southern Illinois. Fully produced and performed by Southern Illinois’ finest theatre performers. </p>
+			<br>
+			<p>We are proud to be your local theatre production company that brings to life the best productions in the area. Since the first production in 2012 we have gone on to present over 30 productions. We offer services in all aspects of theatre. From stage management to full-scale production services. We provide the services to fit your needs and vision. Please visit our past production page to experience what we offer</p>
+			<br>
+			<p><b><u>Mission</u></b></p>
+			<p>Skyline Creek Productions is a for-profit community theatre company specializing in original works of exceptional quality. We engage audiences through innovative performances that spark camaraderie, learning, and contemplation, and provide a resourceful environment for theater artists to take creative risks and develop their work. We believe theater is a community experience. We believe that art in general, and theater specifically, is a catalyst for creating a greater understanding of the most challenging questions facing Americans today. Our programs are designed for audiences to explore culturally relevant stories and be stimulated and inspired to action, all while strengthening our creative community.</p>
+		</div>
+		
+	
+		
+	</main>
+	<!--Page Navigation-->
+	<footer class="footer">
+			<p>
+				<a  href="index.htm">Home</a>
+				<a href="services.htm">Services Offered</a>
+				<a href="pastproductions.htm">Past Productions</a>
+				<a href="aboutus.htm">About Us</a>
+				<a href="contact.htm">Contact Us</a>
+			 </p>
+			<p>Skyline Creek Productions | 211 N. Market St. Suite B Marion, IL 62959 | 618-993-5480 </p>
+			<p>&copy 2022  Skyline Creek Productions</p>
+	</footer>
+</body>
+</html>
