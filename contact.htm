@@ -36,10 +36,11 @@ Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
 <body>
 		<header>
 			<div >
+			  <img src="images/logo3.png" alt="Skyline Creek Logo"  class="logo"> 
 				
-				<img src="images/logo.png" alt="Skyline Creek Logo" style="float:left"> <h1 style="font-size: 8em">Skyline Creek Produtions</h1>
 			</div>	
-		</header>
+			
+		</header><br><br><br><br><br><br><br><br><br><br><br><br>
 	<!--Top navigation Bar-->
 	<div class ="Slick Nav Menu">
         <nav id="mobile_menu"></nav>
@@ -60,7 +61,7 @@ Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
 			
 			<form action="response.htm" >
 			
-			<fieldset class="formlayout">
+			<fieldset class="formlayout" style="float: left">
 				<legend>Lets start a conversation&nbsp;&nbsp;</legend>
 				
 				<label>Full Name</label>
@@ -139,8 +140,11 @@ Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
 				
 				<label>Submission Date</label><br>
 				<input class="center" type="date" name="Submission" required><br><br>
+				</fieldset>
 				
-				<label >Inquiry Type</label>
+				
+				<fieldset class="formlayout">
+				<legend >Inquiry Type</legend>
 				<p class="checkbox">
 				<input type="checkbox" id="Lighting" name="Lighting" value="Lighting">
   				<label for="Lighting"> Lighting</label><br>
@@ -155,9 +159,10 @@ Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
 				</p>
 				
 				
+					
 			</fieldset>
 
-			<br>
+			
 			
 			<fieldset class="formlayout">
 				<legend>Message </legend>
@@ -194,15 +199,7 @@ Tested: October 25, 2022; Passed on Firefox and Chrome browsers.
   				</form>
 			</div>
 
-		<div class="formlayout center">
-		<div class="mapouter">
-			<!--google mas-->
-			<div class="gmap_canvas">
-				<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1234%20W%20Main%20Street%20Carbondale,%20IL%2062902&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-				</iframe>
-			</div>
-		</div>
-	</div>
+		
 			<script>
 				function openForm() {
 	  				document.getElementById("chat").style.display = "block";

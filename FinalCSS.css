@@ -6,7 +6,7 @@ html{
 h1{
 	margin:0;
 	font-size: 100%;
-		
+	 	
 }
 h2,h3,h4,h5,h6 {
 	padding: 10px;
@@ -19,7 +19,9 @@ p{
 }
 .logo{
 	float: left;
-	border-left:15em solid white;
+	
+	width:100%;
+	height: auto;
 }
 .center{
 	text-align: center;
@@ -149,7 +151,11 @@ div.desc {
   float: left;
   width: 24.99999%;
 }
-
+.formlayout {
+  padding: 0 6px;
+  float: left;
+  width:35%;
+}
 form{
     margin: auto;
 }
@@ -161,28 +167,9 @@ input {
 textarea{
     width: 50%;
 }
-fieldset{
-    width: 90%;
-	margin: 1%;
-}
 
-.fieldsetCenter{
-    margin: auto;
-    width: auto;
-}
-.inputUniform{
-    width: 50%;
-}
 
-.divCentered{
-    width:40%;
-    display:block;
-    margin:auto;
-    justify-content: center;
-}
-.centered{
-    text-align: center;
-}
+
 /*media query settings*/
 @media only screen and (max-width: 767px) {
     /* #nav_menu is the original menu */
